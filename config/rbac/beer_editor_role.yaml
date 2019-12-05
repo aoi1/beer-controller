@@ -1,0 +1,26 @@
+# permissions to do edit beers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: beer-editor-role
+rules:
+- apiGroups:
+  - webapp.beer.lova
+  resources:
+  - beers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - webapp.beer.lova
+  resources:
+  - beers/status
+  verbs:
+  - get
+  - patch
+  - update

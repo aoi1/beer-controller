@@ -1,0 +1,7 @@
+apiVersion: webapp.beer.lova/v1
+kind: Beer
+metadata:
+  name: beer-sample
+spec:
+  # Add fields here
+  foo: bar

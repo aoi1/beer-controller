@@ -1,0 +1,7 @@
+domain: beer.lova
+repo: beer
+resources:
+- group: webapp
+  kind: Beer
+  version: v1
+version: "2"
